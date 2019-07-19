@@ -41,7 +41,7 @@ function addToList(){
 }
 
 function generateLiItems(val) {
-  liItems += `<li class="list-group-item">${val.name} ${val.surname} - ${val.age} - ${val.email} - ${val.phone} - ${val.age}</li>`;   
+  liItems += `<li class="list-group-item">${val.name} - ${val.surname} - ${val.email} - ${val.phone} - ${val.age}</li>`;   
 }
 // sorting
 function sortingName(){
@@ -69,3 +69,109 @@ function sortName(){
     inputs[4].value = "";
 
 }
+// SURNAME
+function sortingSurname(){
+return function ( a, b ) {
+  if ( a['surname'] < b['surname'] ){
+    return -1;
+  }
+  if ( a['surname'] > b['surname'] ){
+    return 1;
+  }
+  return 0;
+}
+}
+
+function sortSurname(){
+  students.sort(sortingSurname());
+  students.forEach(generateLiItems);
+
+  document.getElementsByClassName("student-list")[0].innerHTML = liItems;
+    liItems = "";
+    inputs[0].value = "";
+    inputs[1].value = "";
+    inputs[2].value = "";
+    inputs[3].value = "";
+    inputs[4].value = "";
+
+}
+
+// Email
+function sortingEmail(){
+return function ( a, b ) {
+  if ( a['surname'] < b['surname'] ){
+    return -1;
+  }
+  if ( a['surname'] > b['surname'] ){
+    return 1;
+  }
+  return 0;
+}
+}
+
+function sortEmail(){
+  students.sort(sortingEmail());
+  students.forEach(generateLiItems);
+
+  document.getElementsByClassName("student-list")[0].innerHTML = liItems;
+    liItems = "";
+    inputs[0].value = "";
+    inputs[1].value = "";
+    inputs[2].value = "";
+    inputs[3].value = "";
+    inputs[4].value = "";
+
+}
+// Phone
+function sortingPhone(){
+return function ( a, b ) {
+  if ( a['surname'] < b['surname'] ){
+    return -1;
+  }
+  if ( a['surname'] > b['surname'] ){
+    return 1;
+  }
+  return 0;
+}
+}
+
+function sortPhone(){
+  students.sort(sortingPhone());
+  students.forEach(generateLiItems);
+
+  document.getElementsByClassName("student-list")[0].innerHTML = liItems;
+    liItems = "";
+    inputs[0].value = "";
+    inputs[1].value = "";
+    inputs[2].value = "";
+    inputs[3].value = "";
+    inputs[4].value = "";
+
+}
+// AGE
+function sortingAge(){
+  return function ( a, b ) {
+    if ( a['surname'] < b['surname'] ){
+      return -1;
+    }
+    if ( a['surname'] > b['surname'] ){
+      return 1;
+    }
+    return 0;
+  }
+  }
+  
+  function sortAge(){
+    students.sort(sortingAge());
+    students.forEach(generateLiItems);
+  
+    document.getElementsByClassName("student-list")[0].innerHTML = liItems;
+      liItems = "";
+      inputs[0].value = "";
+      inputs[1].value = "";
+      inputs[2].value = "";
+      inputs[3].value = "";
+      inputs[4].value = "";
+  
+  }
+
