@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <form action="">
+                        <input type="text" id="name" class="form-control student-input" placeholder="Name">
+                        <input type="text" id="surname" class="form-control student-input" placeholder="Surname">
+                        <input type="email" id="email" class="form-control student-input" placeholder="Email">
+                        <input type="text" id="phone" class="form-control student-input" placeholder="Phone">
+                        <input type="text" id="age" class="form-control student-input" placeholder="Age">
+                        <p class="error text-danger"></p>
+                        <button type="button" id="addButton" class="btn btn-success mt-5"
+                            onclick="addToList()">add</button>
+                        <button type="button" id="nameButton" class="btn btn-success mt-5" onclick="sortName()">Name sort</button>
+                    </form>
+
+                    <ul class="list-group student-list"></ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
