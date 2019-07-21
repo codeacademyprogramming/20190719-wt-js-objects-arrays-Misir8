@@ -19,7 +19,7 @@ function Student (name, surname, email, phone, age){
 
 function addToList(){
   let student1 = new Student (inputs[0].value, inputs[1].value, inputs[2].value, inputs[3].value, inputs[4].value, );
-  if(inputs[0].value && inputs[1].value && inputs[2].value && inputs[3].value && inputs[4].value){
+  if(inputs[0].value && inputs[1].value && inputs[2].value && inputs[3].value && inputs[4].value )  {
     students.push(student1);
   
   students.forEach(generateLiItems);
@@ -177,7 +177,7 @@ function sortingAge(){
   // Random
   function sortingRandom(){
   return function () {
-    return Math.random() - 0.5;
+    return Math.random() - 1;
   }
   }
 
